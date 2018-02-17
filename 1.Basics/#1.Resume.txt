@@ -5,3 +5,6 @@
 	1.4 Современный стандарт, "use strict"
 	1.5 Переменные
 	1.6 Правильный выбор имени переменной
+		camelCase
+	1.7 Шесть типов данных, typeof
+		number(infinity, NaN),string,boolean,null,undefined,object 
