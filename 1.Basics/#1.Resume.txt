@@ -7,4 +7,6 @@
 	1.6 Правильный выбор имени переменной
 		camelCase
 	1.7 Шесть типов данных, typeof
-		number(infinity, NaN),string,boolean,null,undefined,object 
+		number(infinity, NaN),string,boolean,null,undefined,object
+	1.8 Основные операторы
+		«унарный», «бинарный», «операнд»
