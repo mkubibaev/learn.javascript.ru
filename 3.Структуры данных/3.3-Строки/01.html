@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<p>
+    Напишите функцию ucFirst(str), которая возвращает строку str с заглавным первым символом, например:
+
+    <br>ucFirst("вася") == "Вася";
+    <br>ucFirst("") == ""; // нет ошибок при пустой строке
+</p>
+<script>
+    const ucFirst = function (str) {
+		if (!str) {
+			return str;
+		}
+
+    	const firstSymbol = str.charAt(0).toUpperCase();
+    	const otherSymbols = str.slice(1);
+        return firstSymbol + otherSymbols;
+	};
+
+	alert(ucFirst(''));
+
+
+</script>
+
+</body>
+</html>
