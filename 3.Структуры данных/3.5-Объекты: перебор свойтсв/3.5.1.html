@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>3.5.1</title>
+</head>
+<body>
+
+    <p>Создайте функцию isEmpty(obj), которая возвращает true, если в объекте нет свойств и false – если хоть одно свойство есть.</p>
+
+    <script>
+        const isEmpty = obj => {
+            let propCount = 0;
+
+            for (let key in obj) {
+                propCount++;
+            }
+
+            return propCount === 0;
+        };
+
+        const person = {};
+
+        console.log(isEmpty(person)); //true
+        person.name = 'John';
+        console.log(isEmpty(person)); //false
+
+    </script>
+
+</body>
+</html>

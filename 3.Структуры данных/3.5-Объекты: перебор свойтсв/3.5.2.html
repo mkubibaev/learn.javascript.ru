@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>3.5.2</title>
+</head>
+<body>
+<p>Есть объект salaries с зарплатами. Напишите код, который выведет сумму всех зарплат. Если объект пустой, то результат должен быть 0.</p>
+
+<script>
+    const salaries = {
+        'Вася': 100,
+        'Петя': 300,
+        'Даша': 250
+    };
+
+    const sum = obj => {
+        let total = 0;
+        for (let key in obj) {
+            total += obj[key];
+        }
+        return total;
+    };
+
+    console.log(salaries);
+    console.log(sum(salaries));
+
+</script>
+
+</body>
+</html>

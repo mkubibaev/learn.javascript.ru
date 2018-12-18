@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>3.5.3</title>
+</head>
+<body>
+    <p>Есть объект salaries с зарплатами. Напишите код, который выведет имя сотрудника, у которого самая большая зарплата.</p>
+    <p>Если объект пустой, то пусть он выводит «нет сотрудников».</p>
+
+    <script>
+        const salaries = {
+            'Вася': 100,
+            'Петя': 300,
+            'Даша': 250
+        };
+
+        const ob2 = {};
+
+        const getMax = obj => {
+            let max = 0;
+            let maxName = '';
+            for (let key in obj) {
+                if (obj.hasOwnProperty(key)) {
+                    if (obj[key] > max) {
+                        max = obj[key];
+                        maxName = key;
+                    }
+                }
+            }
+
+            return maxName || 'Нет сотрудников';
+        };
+
+        console.log(getMax(salaries));
+        console.log(getMax(ob2));
+
+
+    </script>
+
+</body>
+</html>
